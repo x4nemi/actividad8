@@ -15,11 +15,13 @@ class Computadora{
         Computadora();
         Computadora(const string &nombre, const string &SO, const string &procesador, float RAM);
 
+        ///Setters
         void setNombre(const string &n);
         void setSO(const string &s);
         void setProcesador(const string &p);
         void setRAM(float r);
 
+        //Getters
         string getNombre();
         string getSO();
         string getProcesador();
