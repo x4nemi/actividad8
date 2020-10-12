@@ -3,28 +3,26 @@
 
 #include <iostream>
 
-using namespace std;
-
 class Computadora{
     private:
-        string nombre;
-        string SO;        
-        string procesador;
+        std::string nombre;
+        std::string SO;        
+        std::string procesador;
         int RAM;
     public:
         Computadora();
-        Computadora(const string &nombre, const string &SO, const string &procesador, float RAM);
+        Computadora(const std::string &nombre, const std::string &SO, const std::string &procesador, float RAM);
 
         ///Setters
-        void setNombre(const string &n);
-        void setSO(const string &s);
-        void setProcesador(const string &p);
+        void setNombre(const std::string &n);
+        void setSO(const std::string &s);
+        void setProcesador(const std::string &p);
         void setRAM(int r);
 
         //Getters
-        string getNombre();
-        string getSO();
-        string getProcesador();
+        std::string getNombre();
+        std::string getSO();
+        std::string getProcesador();
         float getRAM();
 
 };
