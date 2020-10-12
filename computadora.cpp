@@ -23,7 +23,7 @@ void Computadora::setProcesador(const string &p){
     procesador = p;
 }
 
-void Computadora::setRAM(float r){
+void Computadora::setRAM(int r){
     this->RAM = r;
 }
 

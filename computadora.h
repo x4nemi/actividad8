@@ -10,7 +10,7 @@ class Computadora{
         string nombre;
         string SO;        
         string procesador;
-        float RAM;
+        int RAM;
     public:
         Computadora();
         Computadora(const string &nombre, const string &SO, const string &procesador, float RAM);
@@ -19,7 +19,7 @@ class Computadora{
         void setNombre(const string &n);
         void setSO(const string &s);
         void setProcesador(const string &p);
-        void setRAM(float r);
+        void setRAM(int r);
 
         //Getters
         string getNombre();

@@ -1,11 +1,16 @@
-#include "computadora.h"
+#include "laboratorio.h"
 
 using namespace std;
 
 int main(){
-    Computadora miCPU = Computadora("Ruby", "Linux", "Pentium", 500.0);
+    Computadora c01 = Computadora("Ruby", "Linux", "Pentium", 8);
+    Computadora c02 = Computadora("HPdeXimena", "Windows", "Intel i3", 4);
 
-    cout << "Nombre de la computadora: " << miCPU.getNombre() << endl;
+    Laboratorio tics;
+    tics.agregarCPU(c01);
+    tics.agregarCPU(c02);
+
+    tics.mostrar();
 
     return 0;
 }
