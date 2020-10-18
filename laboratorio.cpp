@@ -24,10 +24,12 @@ void Laboratorio::mostrar(){
 
     for(i = 0; i < cont; i++){
         c = CPU[i];
-        cout << "Computadora " << i + 1 << endl;
+        cout << c;
+        cout << endl;
+        /*cout << "Computadora " << i + 1 << endl;
         cout << "Nombre del equipo: " << c.getNombre() << endl;
         cout << "Sistema Operativo: " << c.getSO() << endl;
         cout << "Procesador: " << c.getProcesador() << endl;
-        cout << "Memoria RAM: " << c.getRAM() << endl << endl;
+        cout << "Memoria RAM: " << c.getRAM() << endl << endl;*/
     }
 }

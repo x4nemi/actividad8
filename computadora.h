@@ -2,29 +2,40 @@
 #define COMPUTADORA_H
 
 #include <iostream>
+#include <iomanip>
+
+using namespace std;
 
 class Computadora{
     private:
-        std::string nombre;
-        std::string SO;        
-        std::string procesador;
+        string nombre;
+        string SO;        
+        string procesador;
         int RAM;
     public:
         Computadora();
-        Computadora(const std::string &nombre, const std::string &SO, const std::string &procesador, float RAM);
+        Computadora(const string &nombre, const string &SO, const string &procesador, float RAM);
 
         ///Setters
-        void setNombre(const std::string &n);
-        void setSO(const std::string &s);
-        void setProcesador(const std::string &p);
+        void setNombre(const string &n);
+        void setSO(const string &s);
+        void setProcesador(const string &p);
         void setRAM(int r);
 
         //Getters
-        std::string getNombre();
-        std::string getSO();
-        std::string getProcesador();
+        string getNombre();
+        string getSO();
+        string getProcesador();
         float getRAM();
 
+        friend ostream& operator<<(ostream &out, const Computadora &p){
+            out << p.nombre << endl;
+            out << p.procesador << endl;
+            out << p.RAM << endl;
+            out << p.SO << endl;
+
+            return out;
+        }
 };
 
 #endif
