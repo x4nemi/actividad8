@@ -10,8 +10,8 @@ int main(){
     tics << c01 << c02;
 
     Computadora c03;
-    cin >> c03;
-    tics << c03;
+    //cin >> c03;
+    //tics << c03;
 
     tics.mostrar();
 
