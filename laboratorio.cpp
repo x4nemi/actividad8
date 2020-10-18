@@ -21,11 +21,15 @@ void Laboratorio::agregarCPU(const Computadora &c){
 void Laboratorio::mostrar(){
     Computadora c;
     int i;
-
+    cout << left;
+    cout << setw(15) << "Nombre: ";
+    cout << setw(20) << "Sistema Operativo: ";
+    cout << setw(15) << "Procesador: ";
+    cout << setw(15) << "RAM: ";
+    cout << endl;
     for(i = 0; i < cont; i++){
         c = CPU[i];
         cout << c;
-        cout << endl;
         /*cout << "Computadora " << i + 1 << endl;
         cout << "Nombre del equipo: " << c.getNombre() << endl;
         cout << "Sistema Operativo: " << c.getSO() << endl;

@@ -29,11 +29,14 @@ class Computadora{
         float getRAM();
 
         friend ostream& operator<<(ostream &out, const Computadora &p){
-            out << p.nombre << endl;
-            out << p.procesador << endl;
-            out << p.RAM << endl;
-            out << p.SO << endl;
+            out << left;
+            out << setw(15) << p.nombre;
+            out << setw(20) <<  p.SO;
+            out << setw(15) <<  p.procesador;
+            out << setw(4) <<  p.RAM;
 
+
+            out << endl;
             return out;
         }
 };
