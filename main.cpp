@@ -9,6 +9,8 @@ int main(){
     Laboratorio tics;
     tics.agregarCPU(c01);
     tics.agregarCPU(c02);
+    int i = 0;
+    for(i = 0; i < 10; i++) cout << "=";
 
     tics.mostrar();
 
