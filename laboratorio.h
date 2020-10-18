@@ -14,6 +14,12 @@ class Laboratorio{
 
         void agregarCPU(const Computadora &c);
         void mostrar();
+
+        friend Laboratorio& operator<<(Laboratorio &l, const Computadora &c){
+            l.agregarCPU(c);
+
+            return l;
+        }
 };
 
 #endif 

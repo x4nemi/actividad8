@@ -7,12 +7,13 @@ int main(){
     Computadora c02 = Computadora("HPdeXimena", "Windows", "Intel i3", 4);
 
     Laboratorio tics;
-    tics.agregarCPU(c01);
-    tics.agregarCPU(c02);
+    tics << c01 << c02;
+
+    Computadora c03;
+    cin >> c03;
+    tics << c03;
 
     tics.mostrar();
-
-    //cout << c02;
 
     return 0;
 }

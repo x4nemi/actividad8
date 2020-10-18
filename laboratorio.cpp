@@ -22,10 +22,10 @@ void Laboratorio::mostrar(){
     Computadora c;
     int i;
     cout << left;
-    cout << setw(15) << "Nombre: ";
-    cout << setw(20) << "Sistema Operativo: ";
-    cout << setw(15) << "Procesador: ";
-    cout << setw(15) << "RAM: ";
+    cout << setw(15) << "Nombre ";
+    cout << setw(20) << "Sistema Operativo ";
+    cout << setw(15) << "Procesador ";
+    cout << setw(5) << "RAM ";
     cout << endl;
     for(i = 0; i < cont; i++){
         c = CPU[i];
