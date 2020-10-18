@@ -14,6 +14,7 @@ int main(){
     //tics << c03;
 
     tics.mostrar();
+    tics.respaldar_tabla();
 
     return 0;
 }

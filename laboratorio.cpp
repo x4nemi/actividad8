@@ -37,3 +37,23 @@ void Laboratorio::mostrar(){
         cout << "Memoria RAM: " << c.getRAM() << endl << endl;*/
     }
 }
+
+void Laboratorio::respaldar_tabla(){
+    Computadora c;
+    ofstream archivo("computadoras.txt");
+
+    if(archivo.is_open()){
+        archivo << left;
+        archivo << setw(15) << "Nombre ";
+        archivo << setw(20) << "Sistema Operativo ";
+        archivo << setw(15) << "Procesador ";
+        archivo << setw(5) << "RAM ";
+        archivo << endl;
+        for(size_t i = 0; i < cont; i++){
+            c = CPU[i];
+            archivo << c;
+        }
+    }
+
+    archivo.close();
+}

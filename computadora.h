@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <fstream>
 
 using namespace std;
 
@@ -34,8 +35,6 @@ class Computadora{
             out << setw(20) <<  p.SO;
             out << setw(15) <<  p.procesador;
             out << setw(5) <<  p.RAM;
-
-
             out << endl;
             return out;
         }
