@@ -40,7 +40,7 @@ void Laboratorio::mostrar(){
 
 void Laboratorio::respaldar_tabla(){
     Computadora c;
-    ofstream archivo("computadoras.txt");
+    ofstream archivo("computadoras_tabla.txt");
 
     if(archivo.is_open()){
         archivo << left;
@@ -52,6 +52,23 @@ void Laboratorio::respaldar_tabla(){
         for(size_t i = 0; i < cont; i++){
             c = CPU[i];
             archivo << c;
+        }
+    }
+
+    archivo.close();
+}
+
+void Laboratorio::respaldar(){
+    Computadora c;
+    ofstream archivo("computadoras.txt");
+
+    if(archivo.is_open()){
+        for(size_t i = 0; i < cont; i++){
+            c = CPU[i];
+            archivo << c.getNombre() << endl;
+            archivo << c.getSO() << endl;
+            archivo << c.getProcesador() << endl;
+            archivo << c.getRAM() << endl;
         }
     }
 

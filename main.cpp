@@ -15,6 +15,7 @@ int main(){
 
     tics.mostrar();
     tics.respaldar_tabla();
+    tics.respaldar();
 
     return 0;
 }
